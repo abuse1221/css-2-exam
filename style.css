@@ -468,12 +468,7 @@
     color: #253D4E;
     font-size: 18px;
     margin-bottom: 25px;
-}
-
- .f-col ul {
-        list-style: none;
-}
-
+}   
 .f-col ul li {
     margin-bottom: 12px;
 }
@@ -572,9 +567,7 @@ img {
 
     .product-card, .card, .product-box {
         width: 46%;
-        margin: 2% 1%;
         display: inline-block;
-        vertical-align: top;
         text-align: center;
     }
 }
@@ -639,10 +632,5 @@ img {
 @media (max-width: 400px) {
     .hero-title, .banner-h1 {
         font-size: 20px;
-    }
-}
-@media ( min-width:600px; max-width:767px;) {
-    .header{
-        display: flex;
     }
 }
