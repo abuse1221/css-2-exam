@@ -92,7 +92,9 @@
     color: #7e7e7e;
    }
 .hero-section {
-   background: url('/vegan-food-banner-fresh-vegetables-fruits-berries-white-wooden-background-free-space-your-text-213191613.webp') no-repeat right;
+   background : url('/imgpp.png') ;
+   background-repeat:no-repeat ;
+   background-position: right;
    width: 1250px;
      height: 450px;
       border-radius: 30px;
@@ -549,40 +551,31 @@
     font-size: 12px;
     color: #7E7E7E;
 }
-@media (max-width: 1200px) {
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+@media (max-width: 1100px) {
     .container {
         width: 95%;
         margin: 0 auto;
     }
 }
+
 @media (max-width: 992px) {
-    .search-bar, .search-input {
+    .search-input, .search-bar {
         width: 100%;
         margin: 10px 0;
     }
 
-    .product-card, .card {
-        width: 45%; 
-        display: inline-block;
-    }
-}
-
-@media (max-width: 1200px) {
-    .container {
-        width: 90%;
-        margin: 0 auto;
-    }
-}
-@media (max-width: 992px) {
-    .search-bar, .search-input {
-        width: 100%;
-        margin: 10px 0;
-    }
     .product-card, .card, .product-box {
         width: 46%;
-        margin: 2%;
+        margin: 2% 1%;
         display: inline-block;
         vertical-align: top;
+        text-align: center;
     }
 }
 @media (max-width: 768px) {
@@ -590,22 +583,66 @@
         text-align: center;
         padding: 10px 0;
     }
-}
-    .logo-text, .logo {
+
+    .logo, .logo-text {
         width: 100%;
-        font-size: 28px;
+        display: block;
         margin-bottom: 15px;
     }
+
     .hero-section, .main-banner {
         height: auto;
-        padding: 40px 15px;
-        background-position: center;
-        background-size: cover;
+        padding: 40px 10px;
+        background-color: #f2fce4;
         text-align: center;
     }
 
     .hero-title, .banner-h1 {
         font-size: 24px;
         width: 100%;
-        line-height: 1.3;
-    } 
+    }
+
+    .product-card, 
+    .card, 
+    .product-box, 
+    .category-box, 
+    .footer-column, 
+    .footer-box {
+        width: 95%; 
+        margin: 15px auto;
+        display: block;
+        float: none;
+    }
+
+    .newsletter-box, .newsletter {
+        width: 100%;
+    }
+
+    .newsletter-box input, 
+    .newsletter input, 
+    .subscribe-btn, 
+    .main-btn, 
+    .green-btn {
+        width: 100%;
+        display: block;
+        margin: 10px 0;
+        height: 45px;
+        border-radius: 5px;
+    }
+
+    .phone-number, .nav-links {
+        display: block;
+        margin: 15px 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero-title, .banner-h1 {
+        font-size: 20px;
+    }
+}
+@media ( min-width:600px; max-width:767px;) {
+    .header{
+        display: flex;
+    }
+}
